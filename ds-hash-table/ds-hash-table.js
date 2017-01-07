@@ -5,7 +5,11 @@ var makeHashTable = function() {
   return {
     _storage: [],
     retrieve: function(key) {
-      //your code is here
+      for(var key in ._storage ){
+        if(._storage.hasOwnProperty(key)){
+          return key
+        }
+      }
     },
 
     insert: function(key, value) {
