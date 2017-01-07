@@ -13,7 +13,9 @@ var makeHashTable = function() {
     },
 
     insert: function(key, value) {
-      //your code is here
+      for(var key in ._storage){
+        ._storage[key]=value
+      }
   };
 };
 
