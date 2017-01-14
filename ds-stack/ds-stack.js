@@ -9,7 +9,7 @@ Stack.prototype.add=function(value){
 }
 Stack.prototype.remove=function(value){
 	var size=this._size--
-	if(._size>0){
+	if(this._size>0){
 		return this._storage.pop();
 	}
 }
